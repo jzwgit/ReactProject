@@ -1,0 +1,20 @@
+.Input{
+  height: 60px;
+  display: flex;
+  border-bottom: 1px #efefef solid
+}
+.Input img{
+  width: 21px;
+  height: 21px;
+  padding-top: 19px;
+  padding-left: 20px;
+}
+.Input input {
+  border: none;
+  padding: 20px 25px;
+  font-size: 16px;
+}
+input:focus {
+  outline: none;
+  border: none;
+}

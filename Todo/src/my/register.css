@@ -1,0 +1,62 @@
+.register-body{
+  width: 800px;
+  margin: 50px auto;
+}
+.neirong {
+  display: flex;
+  justify-content: space-around;
+}
+.register-left{
+  width: 350px;
+}
+.btn{
+  width: 330px;
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 20px;
+  background-color: #4293dc;
+  color: #FFF;
+  display: block;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: #41aadb;
+}
+.create-account a{
+  font-weight: 600;
+}
+.tiaokuan{
+  font-size: 12px;
+}
+.tiaokuan a{
+  font-size: 12px;
+  font-weight: 600;
+}
+.register-right{
+  border-left: 1px solid #efefef;
+  padding-left: 40px;
+  width: 350px;
+  margin-top: 40px;
+}
+.mod{
+  display: flex;
+  text-align: left;
+}
+.mod-body{
+  margin-left: 40px;
+}
+.mod-body h3{
+  line-height: 14px;
+  font-size: 17px;
+}
+.register-body-form{
+  margin-top: 40px;
+  background-color: #FFFFFF;
+  border: 1px solid #efefef;
+  border-radius: 8px;
+  width: 350px;
+  height: 260px;
+}

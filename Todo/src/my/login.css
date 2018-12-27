@@ -1,0 +1,36 @@
+.login-body{
+  width: 350px;
+  margin: 50px auto;
+}
+.login-body-form{
+  margin-top: 40px;
+  background-color: #FFFFFF;
+  border: 1px solid #efefef;
+  border-radius: 8px;
+  width: 350px;
+  height: 230px;
+}
+.btn{
+  width: 330px;
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 20px;
+  background-color: #4293dc;
+  color: #FFF;
+  display: block;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: #41aadb;
+}
+.forgetPass{
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+.create-account a{
+  font-weight: 600;
+}
