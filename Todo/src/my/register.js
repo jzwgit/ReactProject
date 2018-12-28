@@ -14,6 +14,7 @@ class Register extends Component {
     this.getName = this.getName.bind(this);
     this.getEmail = this.getEmail.bind(this);
     this.getPassword = this.getPassword.bind(this);
+    this.registing = this.registing.bind(this);
   }
   getName(value) {
     this.setState({
@@ -29,6 +30,20 @@ class Register extends Component {
     this.setState({
       password: value
     });
+  }
+  registing(){
+    console.log(this.state);
+    var url = 'http://localhost:8081/user/register';
+    var data = this.state; 
+    fetch(url, {
+      method: 'POST', // or 'PUT'
+      body: JSON.stringify(data), // data can be `string` or {object}!
+      headers: new Headers({
+	'Content-Type': 'application/json'
+      })
+    }).then(res => res.json())
+      .catch(error => console.error('Error:', error))
+      .then(response => console.log('Success:', response));
   }
   render() {
     return(
@@ -49,7 +64,7 @@ class Register extends Component {
 		<Input src="./images/password.svg" alt="密码图标"
 		  type="password" placeholder="密码" 
 		  getInputValue={this.getPassword} />
-		<button className="btn">创建免费账户</button>
+		<button className="btn" onClick={this.registing}>创建免费账户</button>
 	      </div>
 	      <p className="create-account">
 		已经拥有账户了?<a href="/login">登录</a>
